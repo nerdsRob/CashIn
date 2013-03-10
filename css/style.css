@@ -41,7 +41,7 @@ body {
 
 #form-left {
 	margin: 50px 20px;
-	width: 290px;
+	width: 320px;
 	height: auto;
 	float: right;
 	padding-bottom: 20px;
@@ -51,7 +51,7 @@ body {
 
 #form-right {
 	margin: 50px 10px;
-	width: 290px;
+	width: 320px;
 	height: auto;
 	float: left;
 	padding-bottom: 20px;
@@ -90,14 +90,14 @@ div.arrow-right {
 	border-left:15px solid #ECF0F1; /* bottom, add background color here */
 	font-size:0px;
 	line-height:0px;
-	margin: 90px 290px;
+	margin: 90px 320px;
 	position: absolute;
 }
 
 #form-left table, #form-right table {
 	margin-top: -50px;
 	background-color: transparent;
-	width: 270px;
+	width: 300px;
 	color: #2C3E50;
 	text-align: left;
 }
