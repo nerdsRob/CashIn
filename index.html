@@ -1,18 +1,11 @@
 <html>
 <head>
-	<script type="text/javascript" src=js/zepto.js></script>	
-	<script type="text/javascript" src=js/grades.js></script>	
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/grades.js"></script>
+	<script type="text/javascript" src="js/hipsterfy.js"></script>
+
 	<link type="text/css" href="css/style.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-	<script type="text/javascript">
-		var cir = new Grade(12);
-		cir.name = "cir";
-		cir.preFill();
-		
-		var cam = new Grade(8);
-		cam.name = "cam";
-		cam.preFill();
-	</script>
 </head>
 
 <body>
@@ -349,10 +342,20 @@
 			</div>
 		</div>
 	</div>
+
+		<script type="text/javascript">
+			// Init
+			var cirensaSelects = document.getElementById('cirensa').getElementsByTagName('select');
+		    var camilloSelects = document.getElementById('camillo').getElementsByTagName('select');
+
+		    // new Grade objs w/ number of subjects
+			var cir = new Grade(12);
+			cir.name = "cir";
+			cir.preFill(cirensaSelects);
 			
-		<script type="text/javascript">	        
-	        var cirensaSelects = document.getElementById('cirensa').getElementsByTagName('select');
-	        var camilloSelects = document.getElementById('camillo').getElementsByTagName('select');
+			var cam = new Grade(8);
+			cam.name = "cam";
+			cam.preFill(camilloSelects);
 
 	        function checkVal(index, total) {
 		        if (total == cir) {
@@ -370,28 +373,7 @@
 		        var cash = total.cashIn().toString();
 		        $(id + '-cash').html("<span class='currency'>&euro;</span>" + cash);
 		     }
-		    
-		     
-		     $('#logo-img').anim({
-			 	margin: '0 157px'
-			 }, 0.3, 'ease-out');	
-
-			 $('#cir-pic, #cam-pic').anim({
-				margin: '20px auto'
-			 }, 0.8, 'ease-out');
-		     
-		     $('.text').anim({
-				margin: '10px auto' 
-			 }, 1.2, 'linear');
-		     
-		     $('select').on('change', 
-		     				function(){ 
-								$(this).anim({ 
-										width: '170',
-										opacity: '0.8'        
-										}, 0.7, 'ease');
-								})
-		</script>
+		 </script>
 	</div>
 
 <!-- FOOTER -->

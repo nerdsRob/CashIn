@@ -5,9 +5,10 @@ function Grade(numberOfSubjects) {
 	this.name = "You";
 	
 	// Pre populate 
-	this.preFill = function() {
+	this.preFill = function(elem) {
 		for (var i=0; i < this.grades.length; i++) {
 			this.grades[i] = 3;
+			elem[i].options[3] = new Option("3 (nicht schlecht)", 3, true, true);
 		}
 		this.cashIn();	
 	};
