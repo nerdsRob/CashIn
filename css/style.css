@@ -182,7 +182,7 @@ div.arrow-right {
 .avg {
 	font-size: 24px;
 	font-weight: 400;
-	vertical-align: middle;
+	vertical-align: super;
 	color: #E74C3C;
 }
 
