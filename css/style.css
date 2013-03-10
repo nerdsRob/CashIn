@@ -3,7 +3,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	color: #1ABC9C;
-	background-color: #FFF;/*#1ABC9C;*/
+	background-color: #FFF;
 	margin: 0;
 	padding: 0;
 	overflow: scroll;
@@ -13,7 +13,8 @@ body {
 	margin-top: 30px; 
 	width: 100%;
 	height: 190px;
-	background-color: #E74C3C; /*#1ABC9C; /* #E67E22;*/ /* #ECF0F1; */	
+	background-color: #E74C3C;
+	border-bottom: 10px solid #2C3E50;
 }
 
 #logo-wrapper {
@@ -98,6 +99,7 @@ div.arrow-right {
 	background-color: transparent;
 	width: 270px;
 	color: #2C3E50;
+	text-align: left;
 }
 
 #select-wrapper {
@@ -108,8 +110,9 @@ div.arrow-right {
 #footer {
 	margin-top: 30px; 
 	width: 100%;
-	height: 220px;
-	background-color: #ECF0F1; 	
+	height: 150px;
+	background-color: #ECF0F1;
+	margin-bottom: 30px;	
 }
 
 #content-wrapper {
@@ -131,7 +134,7 @@ div.arrow-right {
 }
 
 #cir-pic {
-	margin: 20px -20000px;
+	margin: 20px -2000px;
 	width: 130px;
 }
 
@@ -141,7 +144,7 @@ div.arrow-right {
 }
 
 #cam-pic {
-	margin: 20px -20000px;
+	margin: 20px -2000px;
 	width: 130px;
 	float: right;
 }
@@ -187,7 +190,7 @@ div.arrow-right {
 	background: url("../img/separator.png") repeat-y;
 	height: 840px;
 	width: 20px;
-	margin: -10px auto;
+	margin: -20px auto;
 	float: left;
 }
 
@@ -202,6 +205,32 @@ div.arrow-right {
 	margin-top: 30px;
 	font-size: 80px;
 	font-weight: 700;
+}
+
+#footer-wrapper {
+	width: 1024px;
+	margin: 10px auto;
+}
+
+p.footer-text {
+	color: #B3B3B3;
+	float: left;
+	width: 180px;
+	/*text-align: center;*/
+	padding: 20px 20px;
+}
+
+p.footer-text-first {
+	color: #B3B3B3;
+	float: left;
+	width: 120px;
+	font-size: 21px;
+	font-weight: 900;
+	padding: 15px 0px;
+}
+
+p {
+	color: #2C3E50; 
 }
 
 select {
@@ -219,7 +248,7 @@ select {
 }
 
 th {
-	text-align: center;
+	text-align: left;
 	height: 60px;
 	font-size: 20px;
 	font-weight: 700;
