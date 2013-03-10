@@ -1,18 +1,11 @@
 <html>
 <head>
-	<script type="text/javascript" src=js/zepto.js></script>	
-	<script type="text/javascript" src=js/grades.js></script>	
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/grades.js"></script>
+	<script type="text/javascript" src="js/hipsterfy.js"></script>
+
 	<link type="text/css" href="css/style.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-	<script type="text/javascript">
-		var cir = new Grade(12);
-		cir.name = "cir";
-		cir.preFill();
-		
-		var cam = new Grade(8);
-		cam.name = "cam";
-		cam.preFill();
-	</script>
 </head>
 
 <body>
@@ -42,10 +35,10 @@
 				<td>
 				<select id="german" onchange="checkVal(0, cir)">
 					<option value="0" selected="selected"></option>
-					<option value="1">1 (wow)</option>
-					<option value="2">2 (super)</option>
-					<option value="3">3 (nicht schlecht)</option>
-					<option value="4">4 (das kannst du besser)</option>
+					<option value="1">1  *** wow!! ***</option>
+					<option value="2">2  *** super! ***</option>
+					<option value="3">3  nicht schlecht</option>
+					<option value="4">4  das kannst du besser!</option>
 				</select>
 				</td>
 			</tr>
@@ -55,141 +48,152 @@
 				<td>
 				<select id="math" onchange="checkVal(1, cir)">
 					<option value="0" selected="selected"></option>
-					<option value="1">1 (wow)</option>
-					<option value="2">2 (super)</option>
-					<option value="3">3 (nicht schlecht)</option>
-					<option value="4">4 (das kannst du besser)</option>
+					<option value="1">1  *** wow!! ***</option>
+					<option value="2">2  *** super! ***</option>
+					<option value="3">3  nicht schlecht</option>
+					<option value="4">4  das kannst du besser!</option>
 				</select>
 				</td>
 			</tr>
 			<tr>
-				<td>Deutsch</td>
+				<td>Englisch</td>
 				<td>
 			<select id="sport" onchange="checkVal(2, cir)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
-				<option value="5">5 (oh oh)</option>
-				<option value="6">6 (das geht gar nicht)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 			
 			<tr>
-				<td>Deutsch</td>
+				<td>Sport</td>
 				<td>
 			<select id="sport2" onchange="checkVal(3, cir)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+ 				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 
 			<tr>
-				<td>Deutsch</td>
+				<td>Wahlpflichtfach</td>
 				<td>
 			<select id="sport2" onchange="checkVal(4, cir)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 			
 			<tr>
-				<td>Deutsch</td>
+				<td>Ethik</td>
 				<td>
 			<select id="sport2" onchange="checkVal(5, cir)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 			
 			<tr>
-				<td>Deutsch</td>
+				<td>Erdkunde</td>
 				<td>
 			<select id="sport2" onchange="checkVal(6, cir)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 			
 			<tr>
-				<td>Deutsch</td>
+				<td>Geschichte</td>
 				<td>
 			<select id="sport2" onchange="checkVal(7, cir)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>	
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 			
 			<tr>
-				<td>Deutsch</td>
+				<td>Physik</td>
 				<td>
 			<select id="sport2" onchange="checkVal(8, cir)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 			
 			<tr>
-				<td>Deutsch</td>
+				<td>Chemie</td>
 				<td>
 			<select id="sport2" onchange="checkVal(9, cir)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 			
 			<tr>
-				<td>Deutsch</td>
+				<td>WAT</td>
 				<td>
 			<select id="sport2" onchange="checkVal(10, cir)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 			
 			<tr>
-				<td>Deutsch</td>
+				<td>Biologie</td>
 				<td>
 			<select id="sport2" onchange="checkVal(11, cir)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
+			</select>
+				</td>
+			</tr>	
+
+			<tr>
+				<td>Musik</td>
+				<td>
+			<select id="sport2" onchange="checkVal(11, cir)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>	
@@ -231,10 +235,10 @@
 				<td>
 				<select id="german" onchange="checkVal(0, cam)">
 					<option value="0" selected="selected"></option>
-					<option value="1">1 (wow)</option>
-					<option value="2">2 (super)</option>
-					<option value="3">3 (nicht schlecht)</option>
-					<option value="4">4 (das kannst du besser)</option>
+					<option value="1">1  *** wow!! ***</option>
+					<option value="2">2  *** super! ***</option>
+					<option value="3">3  nicht schlecht</option>
+					<option value="4">4  das kannst du besser!</option>
 				</select>
 				</td>
 			</tr>
@@ -244,87 +248,100 @@
 				<td>
 				<select id="math" onchange="checkVal(1, cam)">
 					<option value="0" selected="selected"></option>
-					<option value="1">1 (wow)</option>
-					<option value="2">2 (super)</option>
-					<option value="3">3 (nicht schlecht)</option>
-					<option value="4">4 (das kannst du besser)</option>
+					<option value="1">1  *** wow!! ***</option>
+					<option value="2">2  *** super! ***</option>
+					<option value="3">3  nicht schlecht</option>
+					<option value="4">4  das kannst du besser!</option>
 				</select>
 				</td>
 			</tr>
 			<tr>
-				<td>Deutsch</td>
+				<td>Englisch</td>
 				<td>
 			<select id="sport" onchange="checkVal(2, cam)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 			
 			<tr>
-				<td>Deutsch</td>
+				<td>NaWi</td>
 				<td>
 			<select id="sport2" onchange="checkVal(3, cam)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 
 			<tr>
-				<td>Deutsch</td>
+				<td>Musik</td>
 				<td>
 			<select id="sport2" onchange="checkVal(4, cam)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 			
 			<tr>
-				<td>Deutsch</td>
+				<td>Sport</td>
 				<td>
 			<select id="sport2" onchange="checkVal(5, cam)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 			
 			<tr>
-				<td>Deutsch</td>
+				<td>Erdkunde</td>
 				<td>
 			<select id="sport2" onchange="checkVal(6, cam)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
+			</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Lebenskunde</td>
+				<td>
+			<select id="sport2" onchange="checkVal(6, cam)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
 			
 			<tr>
-				<td>Deutsch</td>
+				<td>Geschichte</td>
 				<td>
 			<select id="sport2" onchange="checkVal(7, cam)">
 				<option value="0" selected="selected"></option>
-				<option value="1">1 (wow)</option>
-				<option value="2">2 (super)</option>
-				<option value="3">3 (nicht schlecht)</option>
-				<option value="4">4 (das kannst du besser)</option>
+				<option value="1">1  *** wow!! ***</option>
+				<option value="2">2  *** super! ***</option>
+				<option value="3">3  nicht schlecht</option>
+				<option value="4">4  das kannst du besser!</option>
 			</select>
 				</td>
 			</tr>
@@ -349,10 +366,20 @@
 			</div>
 		</div>
 	</div>
+
+		<script type="text/javascript">
+			// Init
+			var cirensaSelects = document.getElementById('cirensa').getElementsByTagName('select');
+		    var camilloSelects = document.getElementById('camillo').getElementsByTagName('select');
+
+		    // new Grade objs w/ number of subjects
+			var cir = new Grade(12);
+			cir.name = "cir";
+			cir.preFill(cirensaSelects);
 			
-		<script type="text/javascript">	        
-	        var cirensaSelects = document.getElementById('cirensa').getElementsByTagName('select');
-	        var camilloSelects = document.getElementById('camillo').getElementsByTagName('select');
+			var cam = new Grade(8);
+			cam.name = "cam";
+			cam.preFill(camilloSelects);
 
 	        function checkVal(index, total) {
 		        if (total == cir) {
@@ -370,33 +397,37 @@
 		        var cash = total.cashIn().toString();
 		        $(id + '-cash').html("<span class='currency'>&euro;</span>" + cash);
 		     }
-		    
-		     
-		     $('#logo-img').anim({
-			 	margin: '0 157px'
-			 }, 0.3, 'ease-out');	
-
-			 $('#cir-pic, #cam-pic').anim({
-				margin: '20px auto'
-			 }, 0.8, 'ease-out');
-		     
-		     $('.text').anim({
-				margin: '10px auto' 
-			 }, 1.2, 'linear');
-		     
-		     $('select').on('change', 
-		     				function(){ 
-								$(this).anim({ 
-										width: '170',
-										opacity: '0.8'        
-										}, 0.7, 'ease');
-								})
-		</script>
+		 </script>
 	</div>
 
 <!-- FOOTER -->
 	<div id="footer">
-		
+		<div id="footer-wrapper">
+		<p class="footer-text-first">
+			Regeln
+		</p>
+
+		<p class="footer-text">
+			Du hast <b>50&euro;</b> Startkapital,<br> 
+			wenn auf deinem Zeugnis<br>
+			weder eine <b>5</b> noch eine <b>6</b> steht<br>
+		</p>
+
+  		<p class="footer-text">
+			Mit jeder <b>1</b> auf deinem Zeugnis<br> 
+			<b>erh&ouml;ht</b> sich dein Budget um <b>10&euro;</b><br>
+  		</p>
+
+		<p class="footer-text">
+			Mit jeder <b>2</b> auf deinem Zeugnis<br> 
+			<b>erh&ouml;ht</b> sich dein Budget um <b>5&euro;</b><br>
+		</p>
+ 
+ 		<p class="footer-text">
+			Mit jeder <b>4</b> auf deinem Zeugnis<br> 
+			<b>reduziert</b> sich dein Budget um <b>5&euro;</b>
+  		</p>
+  	</div>
 	</div>
 </body>
 </html>
