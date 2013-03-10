@@ -392,6 +392,10 @@
 		        
 		        var avg = total.printAverage();
 		        var id = "#".concat(total.print());
+		         $(id + '-cash').animate({
+			        scale: '1.2'
+		        }, 200, 'ease-out', function(){$(this).anim({ scale: '1.0'}, 0.2)});
+
 		        $(id + '-average').html("<span class='avg'>&oslash;</span>" + avg);	
 		    
 		        var cash = total.cashIn().toString();
