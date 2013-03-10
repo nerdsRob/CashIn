@@ -108,8 +108,9 @@ div.arrow-right {
 #footer {
 	margin-top: 30px; 
 	width: 100%;
-	height: 220px;
-	background-color: #ECF0F1; 	
+	height: 150px;
+	background-color: #ECF0F1;
+	margin-bottom: 30px;	
 }
 
 #content-wrapper {
@@ -202,6 +203,32 @@ div.arrow-right {
 	margin-top: 30px;
 	font-size: 80px;
 	font-weight: 700;
+}
+
+#footer-wrapper {
+	width: 1024px;
+	margin: 10px auto;
+}
+
+p.footer-text {
+	color: #B3B3B3;
+	float: left;
+	width: 180px;
+	/*text-align: center;*/
+	padding: 20px 20px;
+}
+
+p.footer-text-first {
+	color: #B3B3B3;
+	float: left;
+	width: 120px;
+	font-size: 21px;
+	font-weight: 900;
+	padding: 15px 0px;
+}
+
+p {
+	color: #2C3E50; 
 }
 
 select {
