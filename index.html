@@ -1,0 +1,402 @@
+<html>
+<head>
+	<script type="text/javascript" src=js/zepto.js></script>	
+	<script type="text/javascript" src=js/grades.js></script>	
+	<link type="text/css" href="css/style.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+		var cir = new Grade(12);
+		cir.name = "cir";
+		cir.preFill();
+		
+		var cam = new Grade(8);
+		cam.name = "cam";
+		cam.preFill();
+	</script>
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo-wrapper">
+			<div id="logo-img">
+				<img src="img/logo.png" width="180" height="180" />
+			</div>
+		</div>
+	</div>
+	
+<!-- CONTENT -->
+	<div id="content-wrapper">
+
+<!-- Cirensa -->
+		<div id="cirensa">
+			<div id="form-left">
+			<div class="arrow-left"></div>	
+			<div class="form-header">
+			</div>	   
+			<table rules="none" cellpadding="8" align="center">
+			<tr>
+			<th>Fach</th><th>Note</th>
+			</tr>
+			<tr>
+				<td>Mathe</td>
+				<td>
+				<select id="german" onchange="checkVal(0, cir)">
+					<option value="0" selected="selected"></option>
+					<option value="1">1 (wow)</option>
+					<option value="2">2 (super)</option>
+					<option value="3">3 (nicht schlecht)</option>
+					<option value="4">4 (das kannst du besser)</option>
+				</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+				<select id="math" onchange="checkVal(1, cir)">
+					<option value="0" selected="selected"></option>
+					<option value="1">1 (wow)</option>
+					<option value="2">2 (super)</option>
+					<option value="3">3 (nicht schlecht)</option>
+					<option value="4">4 (das kannst du besser)</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport" onchange="checkVal(2, cir)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+				<option value="5">5 (oh oh)</option>
+				<option value="6">6 (das geht gar nicht)</option>
+			</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(3, cir)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(4, cir)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(5, cir)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(6, cir)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(7, cir)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>	
+			</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(8, cir)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(9, cir)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(10, cir)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(11, cir)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>	
+			</table>
+			<div id="cir-average"></div>
+		</div>
+
+			<div id="cir-text-wrapper">
+				<div id="cir-pic">
+					<img src="img/cir_pic.png" width="130" height="130" />
+				</div>
+				<div class="text">
+					<div class="headline">Cirensa</div>
+					<div id="cir-cash">
+						<span class='currency'>&euro;</span>50
+					</div>
+					<p>
+						<b>Dein Budget</b><br />
+						zum gemeinsamen Shoppen
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="separator"></div>
+		
+<!-- Camillo -->
+		<div id="camillo">
+		<div id="form-right">
+			<div class="arrow-right"></div>	
+			<div class="form-header">
+			</div>	   
+			<table rules="none" cellpadding="8" align="center">
+			<tr>
+			<th>Fach</th><th>Note</th>
+			</tr>
+			<tr>
+				<td>Mathe</td>
+				<td>
+				<select id="german" onchange="checkVal(0, cam)">
+					<option value="0" selected="selected"></option>
+					<option value="1">1 (wow)</option>
+					<option value="2">2 (super)</option>
+					<option value="3">3 (nicht schlecht)</option>
+					<option value="4">4 (das kannst du besser)</option>
+				</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+				<select id="math" onchange="checkVal(1, cam)">
+					<option value="0" selected="selected"></option>
+					<option value="1">1 (wow)</option>
+					<option value="2">2 (super)</option>
+					<option value="3">3 (nicht schlecht)</option>
+					<option value="4">4 (das kannst du besser)</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport" onchange="checkVal(2, cam)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(3, cam)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(4, cam)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(5, cam)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(6, cam)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Deutsch</td>
+				<td>
+			<select id="sport2" onchange="checkVal(7, cam)">
+				<option value="0" selected="selected"></option>
+				<option value="1">1 (wow)</option>
+				<option value="2">2 (super)</option>
+				<option value="3">3 (nicht schlecht)</option>
+				<option value="4">4 (das kannst du besser)</option>
+			</select>
+				</td>
+			</tr>
+		</table>
+			<div id="cam-average"></div>
+		</div>
+
+			<div id="cam-text-wrapper">
+				<div id="cam-pic">
+					<img src="img/cam_pic.png" width="130" height="130" />
+				</div>
+				<div class="text">
+					<div class="headline">Camillo</div>
+					<div id="cam-cash">
+						<span class='currency'>&euro;</span>50
+					</div>
+					<p>
+						<b>Dein Budget</b><br />
+						zum gemeinsamen Shoppen
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+		<script type="text/javascript">	        
+	        var cirensaSelects = document.getElementById('cirensa').getElementsByTagName('select');
+	        var camilloSelects = document.getElementById('camillo').getElementsByTagName('select');
+
+	        function checkVal(index, total) {
+		        if (total == cir) {
+			 		total.grades[index] = cirensaSelects[index].value;
+			 	} else {
+				 	total.grades[index] = camilloSelects[index].value;
+			 	}
+		 		total.getAverage();
+		 		console.log(total.grades.toString());
+		        
+		        var avg = total.printAverage();
+		        var id = "#".concat(total.print());
+		        $(id + '-average').html("<span class='avg'>&oslash;</span>" + avg);	
+		    
+		        var cash = total.cashIn().toString();
+		        $(id + '-cash').html("<span class='currency'>&euro;</span>" + cash);
+		     }
+		    
+		     
+		     $('#logo-img').anim({
+			 	margin: '0 157px'
+			 }, 0.3, 'ease-out');	
+
+			 $('#cir-pic, #cam-pic').anim({
+				margin: '20px auto'
+			 }, 0.8, 'ease-out');
+		     
+		     $('.text').anim({
+				margin: '10px auto' 
+			 }, 1.2, 'linear');
+		     
+		     $('select').on('change', 
+		     				function(){ 
+								$(this).anim({ 
+										width: '170',
+										opacity: '0.8'        
+										}, 0.7, 'ease');
+								})
+		</script>
+	</div>
+
+<!-- FOOTER -->
+	<div id="footer">
+		
+	</div>
+</body>
+</html>
