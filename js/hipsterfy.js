@@ -14,8 +14,7 @@
 		     $('select').on('change', 
 		     				function(){ 
 								$(this).anim({ 
-										width: '170',
-										opacity: '0.8'        
-										}, 0.7, 'ease');
-								})
+										width: '170'
+										}, 0.5, 'ease', function(){$(this).anim({opacity: '0.7'}, 0.8)})
+							})
 });
