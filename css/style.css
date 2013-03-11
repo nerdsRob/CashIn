@@ -47,6 +47,7 @@ body {
 	padding-bottom: 20px;
 	background-color: #ECF0F1; /*#BDC4C7;*/
 	-webkit-border-radius: 10;
+	-moz-border-radius: 10px;
 }
 
 #form-right {
@@ -57,6 +58,7 @@ body {
 	padding-bottom: 20px;
 	background-color: #ECF0F1; /*#BDC4C7;*/
 	-webkit-border-radius: 10;
+	-moz-border-radius: 10px;
 }
 
 .form-header {
@@ -66,6 +68,8 @@ body {
 	background-color: #E74C3C; /* #ECF0F1; */
 	-webkit-border-top-left-radius: 10;
 	-webkit-border-top-right-radius: 10;
+	-moz-border-radius-topleft: 10;
+	-moz-border-radius-topright: 10;
 }
 
 /* create an arrow that points left */
@@ -97,7 +101,7 @@ div.arrow-right {
 #form-left table, #form-right table {
 	margin-top: -50px;
 	background-color: transparent;
-	width: 300px;
+	width: 290px;
 	color: #2C3E50;
 	text-align: left;
 }
@@ -188,7 +192,7 @@ div.arrow-right {
 
 #separator {
 	background: url("../img/separator.png") repeat-y;
-	height: 840px;
+	height: 860px;
 	width: 20px;
 	margin: -20px auto;
 	float: left;
@@ -221,7 +225,7 @@ p.footer-text {
 }
 
 p.footer-text-first {
-	color: #B3B3B3;
+	color: #E74C3C;
 	float: left;
 	width: 120px;
 	font-size: 21px;
@@ -239,18 +243,34 @@ select {
    font-size: 14px;
    font-family: 'Lato', sans-serif;
    font-weight: 400; 
-   padding: 2px 10px; 
-   width: 50px;
+   padding: 2px 10px !important;
+   width: 100px;
    height: 30px;
-   *width: 50px;
+   border: none;
+   *width: 100px;
    *background: #FFF; 
    -webkit-appearance: none;
+   appearance: none;
+   outline: none;
+   margin: 0;
+   border-radius: 4px;
+}
+
+@-moz-document url-prefix() {
+	.custom {
+	   width: 100px;
+	   padding: 2px 10px;
+	   background: #FFF;
+	   font-size: 14px;
+	   font-family: 'Lato', sans-serif;
+	   font-weight: 400;
+	}
 }
 
 th {
 	text-align: left;
 	height: 60px;
 	font-size: 20px;
-	font-weight: 700;
+	font-weight: 400;
 	color: #FFF;
 }

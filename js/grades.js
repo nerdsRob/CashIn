@@ -8,7 +8,7 @@ function Grade(numberOfSubjects) {
 	this.preFill = function(elem) {
 		for (var i=0; i < this.grades.length; i++) {
 			this.grades[i] = 3;
-			elem[i].options[0] = new Option("Deine Note", 3, true, true);
+			elem[i].options[0] = new Option("Note?", 3, true, true);
 		}
 		this.cashIn();	
 	};
