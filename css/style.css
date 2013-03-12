@@ -243,7 +243,7 @@ select {
    font-size: 14px;
    font-family: 'Lato', sans-serif;
    font-weight: 400; 
-   padding: 2px 10px !important;
+   padding: 2px 10px !important; 
    width: 100px;
    height: 30px;
    border: none;
@@ -263,9 +263,9 @@ select {
 	   background: #FFF;
 	   font-size: 14px;
 	   font-family: 'Lato', sans-serif;
-	   font-weight: 400;
+	   font-weight: 400; 
 	}
-}
+} 
 
 th {
 	text-align: left;

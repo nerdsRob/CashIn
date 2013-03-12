@@ -1,11 +1,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="fav.ico" type="image/x-icon">
+	<link type="text/css" href="css/style.css" rel="stylesheet">
+	
 	<script type="text/javascript" src="js/grades.js"></script>
 	<script type="text/javascript" src="js/zepto.js"></script>
 	<script type="text/javascript" src="js/hipsterfy.js"></script>
-
-	<link type="text/css" href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/zepto.cookie.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </head>
 
 <body>
@@ -366,50 +369,31 @@
 			</div>
 		</div>
 	</div>
+</div>
 
-		<script type="text/javascript">
-			// Init
-			var cirensaSelects = document.getElementById('cirensa').getElementsByTagName('select');
-		    var camilloSelects = document.getElementById('camillo').getElementsByTagName('select');
-
-		    // new Grade objs w/ number of subjects
-			var cir = new Grade(13);
-			cir.name = "cir";
-			cir.preFill(cirensaSelects);
-			
-			var cam = new Grade(9);
-			cam.name = "cam";
-			cam.preFill(camilloSelects);
-
-	        function checkVal(index, total) {
-		        if (total == cir) {
-			 		total.grades[index] = cirensaSelects[index].value;
-			 	} else {
-				 	total.grades[index] = camilloSelects[index].value;
-			 	}
-		 		total.getAverage();
-		        var avg = total.printAverage();
-		        var id = "#".concat(total.print());
-		        $(id + '-average').html("<span class='avg'>&oslash;</span>" + avg);	
-
-		        var cash = total.cashIn().toString();
-		        $(id + '-cash').html("<span class='currency'>&euro;</span>" + cash);
-		        var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
-
-		        if (!isFirefox) {
-			        $(id + '-cash').animate({
-				        scale: '1.2'
-			        }, 200, 'ease', function(){  $(this).anim({ scale: '1.0' }, 0.2) });
-		        }
-/*
-
-		        $(id + '-pic').animate({
-			        translateY: '-10px'
-		        }, 300, 'linear', function(){ $(this).anim({ translateY: '0' }, 0.3) });
-*/
-		     }
-		 </script>
-	</div>
+<script type="text/javascript">
+	// Init
+	var cirensaSelects = document.getElementById('cirensa').getElementsByTagName('select');
+	var camilloSelects = document.getElementById('camillo').getElementsByTagName('select');
+	
+	// New Grade objs with # of subjects
+	// pre populate with cookie stored values if set
+	var cir = new Grade(13);
+	cir.name = "cir";
+	cir.setGrades(getStoredGrades(cir.getName(), cir.getNumberOfSubjects()));
+	cir.preFill(cirensaSelects, cir.getGrades());
+	var id = "#".concat(cir.print());
+	setMoney(id, cir.cashIn().toString());
+	setAverage(cir);
+	
+	var cam = new Grade(9);
+	cam.name = "cam";
+	cam.setGrades(getStoredGrades(cam.getName(), cam.getNumberOfSubjects()));
+	cam.preFill(camilloSelects, cam.getGrades());
+	var id = "#".concat(cam.print());
+	setMoney(id, cam.cashIn().toString());	
+	setAverage(cam);
+</script>
 
 <!-- FOOTER -->
 	<div id="footer">
@@ -439,6 +423,6 @@
 			<b>reduziert</b> sich dein Budget um <b>5&euro;</b>
   		</p>
   	</div>
-	</div>
+</div>
 </body>
 </html>
