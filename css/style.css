@@ -81,7 +81,7 @@ div.arrow-left {
 	border-right:15px solid #ECF0F1; /* bottom, add background color here */
 	font-size:0px;
 	line-height:0px;
-	margin: 90px -15px;
+	margin: 120px -15px;
 	position: absolute;
 }
 
@@ -94,7 +94,7 @@ div.arrow-right {
 	border-left:15px solid #ECF0F1; /* bottom, add background color here */
 	font-size:0px;
 	line-height:0px;
-	margin: 90px 320px;
+	margin: 120px 320px;
 	position: absolute;
 }
 
@@ -114,7 +114,7 @@ div.arrow-right {
 #footer {
 	margin-top: 30px; 
 	width: 100%;
-	height: 150px;
+	height: 170px;
 	background-color: #ECF0F1;
 	margin-bottom: 30px;	
 }
@@ -213,15 +213,15 @@ div.arrow-right {
 
 #footer-wrapper {
 	width: 1024px;
-	margin: 10px auto;
+	margin: 1px auto;
 }
 
 p.footer-text {
 	color: #B3B3B3;
 	float: left;
-	width: 180px;
+	width: 185px;
 	/*text-align: center;*/
-	padding: 20px 20px;
+	padding: 10px 20px;
 }
 
 p.footer-text-first {
@@ -230,7 +230,7 @@ p.footer-text-first {
 	width: 120px;
 	font-size: 21px;
 	font-weight: 900;
-	padding: 15px 0px;
+	padding: 5px 0px;
 }
 
 p {
@@ -239,7 +239,7 @@ p {
 
 select {
    color: #2C3E50; 
-   background: #FFF;
+   background: #FFF url("../img/arrow.png") right top no-repeat;
    font-size: 14px;
    font-family: 'Lato', sans-serif;
    font-weight: 400; 

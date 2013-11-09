@@ -5,7 +5,7 @@ function Grade(numberOfSubjects) {
 	this.grades = new Array(numberOfSubjects);	
 	this.numberOfSubjects = numberOfSubjects;
 	this.average = 0.0;
-	this.cash = 50.0;
+	this.cash = 40.0;
 	this.name = "You";
 	
 	// Pre populate value set
@@ -93,16 +93,18 @@ function Grade(numberOfSubjects) {
 			var grade = parseInt(arr[i]);
 			reward += this.reward(grade);
 		}
-		return this.cash + reward;
+		var sum = this.cash + reward;
+		if (sum <= 0) return 0;
+		return sum;
 	};
 	
 	// Rewards 
 	this.reward = function(val) {
 		switch (val) {
+			case 0: return 0;
 			case 1: return 10; 
 			case 2: return 5;
-			case 0:
-			case 3: return 0;
+			case 3: return 1;
 			case 4: return -5;
 		}	
 	};
